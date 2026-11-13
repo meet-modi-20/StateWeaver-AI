@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #FAF8F4;
+    color: #1E2124;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
+
+/* Custom scrollbar for clean IDE feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F2EB;
+}
+::-webkit-scrollbar-thumb {
+  background: #DED7C9;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C8BFAE;
+}
+
+/* Subtle paper texture */
+.paper-surface {
+  background-color: #FFFFFF;
+  border: 1px solid #EBE6DC;
+  box-shadow: 0 1px 3px rgba(27, 29, 32, 0.03), 0 4px 12px rgba(27, 29, 32, 0.02);
+}
+
+.paper-surface-cream {
+  background-color: #FCFBF9;
+  border: 1px solid #EBE6DC;
+}
+
+.code-panel {
+  font-family: 'JetBrains Mono', monospace;
+  background-color: #17191C;
+  color: #E2E8F0;
+}
